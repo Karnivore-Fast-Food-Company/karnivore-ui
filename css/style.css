@@ -1,0 +1,38 @@
+/* #region Tablet version (Mobile: less than 468px) */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+h1,
+h2,
+.color {
+  color: #000;
+}
+
+
+
+/* #region Tablet version (Tablet: up to 768px) */
+
+/* @media screen and (min-width: 768px) {
+
+} */
+
+/* #endregion */
+
+/* #region Desktop version (Desktop: up to 1024px) */
+
+/* @media screen and (min-width: 1023px) {
+
+} */
+
+/* #endregion */
+
+/* #region TV and extra large screen version (TV or Extra Large: from 1024px) */
+
+/* @media screen and (min-width: 1024px) {
+
+} */
+
+/* #endregion */
