@@ -41,7 +41,7 @@ body {
   background-color: rgb(245, 244, 243);
 }
 
-<<<<<<< head h1 {
+head h1 {
   font-size: var(--h1-font-size);
 }
 
@@ -128,7 +128,7 @@ nav button {
   display: none;
   border: none;
   background-color: transparent;
-  margin-left: 5rems;
+  margin-left: 5rem;
   cursor: pointer;
 }
 
@@ -208,8 +208,8 @@ nav button {
   }
 }
 
-======= >>>>>>> main
 /* #region Tablet version (Tablet: up to 768px) */
+
 /* @media screen and (min-width: 768px) {
 } */
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
