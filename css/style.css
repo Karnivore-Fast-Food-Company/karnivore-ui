@@ -1,15 +1,14 @@
 :root {
-  /*========== Colors ==========*/
+  /* ========== Colors ========== */
   --primary-color: #f2a535;
   --primary-color-alt: #f2a6352a;
-
   --button-color: #424fb5;
   --text-color: #000;
   --link-color: #000;
   --container-color: #fff;
   --nav-color: #424fb5;
 
-  /*========== Font and typography ==========*/
+  /* ========== Font and typography ========== */
   --body-font: "Montserrat", sans-serif;
   --h1-font-size: 2.4rem;
   --h2-font-size: 2rem;
@@ -19,11 +18,11 @@
   --tiny-font-size: 0.625rem;
   --bottom-nav-font-size: 0.875rem;
 
-  /*========== z index ==========*/
+  /* ========== z index ========== */
   --z-tooltip: 10;
   --z-fixed: 100;
 
-  /*========== dimensions ==========*/
+  /* ========== dimensions ========== */
   --container-width-lg: 80%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
@@ -42,15 +41,18 @@ body {
   background-color: rgb(245, 244, 243);
 }
 
-h1 {
+<<<<<<< head h1 {
   font-size: var(--h1-font-size);
 }
+
 h2 {
   font-size: var(--h2-font-size);
 }
+
 h3 {
   font-size: var(--h3-font-size);
 }
+
 h4 {
   font-size: var(--h4-font-size);
 }
@@ -89,6 +91,7 @@ nav {
   gap: 4rem;
   align-items: center;
   flex-direction: row;
+
   /* display: inline; */
 }
 
@@ -99,9 +102,11 @@ nav {
 .nav__menu a:hover {
   color: var(--primary-color);
 }
+
 .nav__icon {
   display: none;
 }
+
 .cart {
   place-items: center;
   display: flex;
@@ -109,6 +114,7 @@ nav {
   align-items: center;
   justify-content: center;
 }
+
 .cart .nav__item-text {
   display: block;
 }
@@ -134,15 +140,19 @@ nav button {
     --h3-font-size: 1.4rem;
     --h4-font-size: 1rem;
   }
+
   h1 {
     font-size: var(--h1-font-size);
   }
+
   h2 {
     font-size: var(--h2-font-size);
   }
+
   h3 {
     font-size: var(--h3-font-size);
   }
+
   h4 {
     font-size: var(--h4-font-size);
   }
@@ -163,17 +173,20 @@ nav button {
     border-radius: 1.25rem 1.25rem 0 0;
     transition: 0.4s;
   }
+
   .nav__list {
     display: flex;
     gap: 3rem;
     flex-direction: row;
     font-size: var(--normal-font-size);
   }
+
   nav ul li a {
     place-items: center;
     display: flex;
     flex-direction: row;
   }
+
   .nav__icon {
     display: block;
   }
@@ -189,17 +202,16 @@ nav button {
     padding: 10px 10px 10px 10px;
     border-radius: 25px;
   }
+
   .active .nav__item-text {
     display: block;
   }
 }
 
+======= >>>>>>> main
 /* #region Tablet version (Tablet: up to 768px) */
-
 /* @media screen and (min-width: 768px) {
-
 } */
-
 @media only screen and (min-width: 768px) and (max-width: 1024px) {
   /* ==========HIDDEN NAV=========== */
   .nav__menu {
@@ -208,6 +220,7 @@ nav button {
     top: 5rem;
     height: fit-content;
     width: 18rem;
+
     /* background-color: var(--button-color); */
     display: none;
   }
@@ -216,6 +229,7 @@ nav button {
     width: 100%;
     height: 5.8rem;
   }
+
   .nav__menu li a {
     width: 100%;
     height: 100%;
@@ -229,11 +243,13 @@ nav button {
     background-color: var(--button-color);
     color: var(--primary-color-alt);
   }
+
   .nav__list {
     flex-direction: column;
     font-size: var(--normal-font-size);
     gap: 0;
   }
+
   .side-open {
     display: block;
   }
