@@ -143,6 +143,22 @@ nav button {
   cursor: pointer;
 }
 
+/* ============== HomeScreen ================ */
+
+.category-card {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid var(--primary-color);
+  background-color: var(--container-color);
+}
+
+.category-card-active {
+  height: 40px;
+  padding: 10px;
+  border: 1px solid var(--container-color);
+  background-color: var(--primary-color);
+}
+
 /* ========Mobile View======== */
 @media only screen and (max-width: 1024px) {
   :root {
