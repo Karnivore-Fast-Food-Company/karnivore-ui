@@ -79,7 +79,6 @@ nav {
   position: fixed;
   z-index: 11;
   top: 0;
-  position: fixed;
 }
 
 .nav__container {
@@ -188,9 +187,6 @@ nav button {
   max-width: 900px;
   justify-content: center;
   align-content: center;
-
-  /* grid-gap: 1rem; */
-  /* margin: 1rem 0; */
 }
 
 /* food card */
@@ -208,9 +204,8 @@ nav button {
   align-items: center;
   justify-content: center;
   gap: 5px;
-  border-radius: 0px 0px 10px 10px;
+  border-radius: 0 0 10px 10px;
   width: 100%;
-
   background-color: var(--primary-color);
 }
 
@@ -231,10 +226,10 @@ nav button {
   display: flex;
   padding-left: 0;
   padding-right: 0;
-  display: flex;
   flex-direction: column;
   align-items: center;
 }
+
 .box3 {
   position: absolute;
   width: 80%;
@@ -320,6 +315,7 @@ nav button {
   .active .nav__item-text {
     display: block;
   }
+
   /* =================== =================== */
 
   /* food card */
@@ -335,12 +331,10 @@ nav button {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: center;
     gap: 5px;
-    border-radius: 0px 0px 10px 10px;
+    border-radius: 0 0 10px 10px;
     width: 100%;
     justify-content: center;
-    align-items: center;
     background-color: var(--primary-color);
   }
 
@@ -364,6 +358,7 @@ nav button {
     justify-content: end;
     align-items: center;
   }
+
   .box3 {
     position: absolute;
     width: 80%;
@@ -373,6 +368,7 @@ nav button {
     left: 10%;
     top: -60px;
   }
+
   .spacer {
     height: 10px;
   }
