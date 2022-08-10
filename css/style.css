@@ -84,9 +84,11 @@ nav {
   background-color: var(--container-color);
   width: 100vw;
   height: 5rem;
-  position: fixed;
+
+  /* position: fixed; */
   z-index: 11;
   top: 0;
+  position: relative;
 }
 
 .nav__container {
