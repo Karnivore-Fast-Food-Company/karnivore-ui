@@ -185,7 +185,7 @@ nav button {
 .main-home-scrollable {
   overflow-y: scroll;
   overflow-x: hidden;
-  height: 100%;
+  height: 80vh;
 }
 
 /* Categories */
@@ -478,7 +478,10 @@ nav button {
     display: block;
   }
 
-  /* =================== =================== */
+  /* =================== main body=================== */
+  .main-home-scrollable {
+    height: calc(100vh - 12.5rem);
+  }
 
   /* food card */
 
@@ -555,10 +558,14 @@ nav button {
 /* tiny screens */
 
 @media screen and (max-width: 575px) {
+  .main-home-scrollable {
+    height: calc(100vh - 12.5rem);
+  }
+
   .box1 {
     width: 40vw;
-    height: 30vh;
-    margin-top: 60px;
+    height: 40vw;
+    margin-top: 80px;
   }
 
   .box2 {
@@ -574,6 +581,7 @@ nav button {
     flex-direction: column;
     justify-content: end;
     align-items: center;
+    padding-top: 40vw;
   }
 
   .box3 {
