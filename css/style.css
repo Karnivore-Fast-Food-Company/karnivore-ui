@@ -1,3 +1,21 @@
+/* Scrollbar styling */
+
+/* width */
+::-webkit-scrollbar {
+  width: 4px;
+  height: 4px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  background: #f1f1f1;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: #eae3d2;
+}
+
 :root {
   /* ========== Colors ========== */
   --primary-color: #f2a535;
@@ -26,23 +44,6 @@
   --container-width-lg: 80%;
   --container-width-md: 90%;
   --container-width-sm: 94%;
-}
-/* Scrollbar styling */
-
-/* width */
-::-webkit-scrollbar {
-  width: 4px;
-  height: 4px;
-}
-
-/* Track */
-::-webkit-scrollbar-track {
-  background: #f1f1f1;
-}
-
-/* Handle */
-::-webkit-scrollbar-thumb {
-  background: #eae3d2;
 }
 
 /* Handle on hover */
@@ -186,6 +187,7 @@ nav button {
   overflow-x: hidden;
   height: 100%;
 }
+
 /* Categories */
 .category-card {
   display: flex;
@@ -383,11 +385,11 @@ nav button {
 
 .cart-item-img {
   height: 100px;
-  border-radius: 10px;
+
+  /* border-radius: 10px; */
 }
 
 .cart-calculations {
-  border-radius: 10px, 10px, 0, 0;
   background-color: var(--container-color);
 }
 
@@ -533,6 +535,7 @@ nav button {
   .spacer {
     height: 10px;
   }
+
   .food-items {
     margin-left: 20px;
     margin-right: 20px;
