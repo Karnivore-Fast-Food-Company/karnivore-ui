@@ -288,6 +288,11 @@ nav button {
   top: -100px;
 }
 
+.food-card-text,
+.food-card-text1 {
+  text-align: center;
+}
+
 /* food detail Modal section */
 .food-detail-image {
   border: 1px solid;
