@@ -1,8 +1,8 @@
 function handleTextOverflow(length, textClass) {
-  document.querySelectorAll(textClass).forEach(function (element) {
-    var text = element.innerHTML.trim();
+  document.querySelectorAll(textClass).forEach((element) => {
+    const text = element.innerHTML.trim();
     text.length > length
-      ? (element.innerHTML = text.slice(0, length) + "...")
+      ? (element.innerHTML = `${text.slice(0, length)}...`)
       : (element.innerHTML = text);
   });
 }
