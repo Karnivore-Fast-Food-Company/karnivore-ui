@@ -353,6 +353,7 @@ nav button {
   color: var(--container-color);
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .cart-bx {
@@ -361,6 +362,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .cart-icon {
