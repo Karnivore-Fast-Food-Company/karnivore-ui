@@ -129,6 +129,7 @@ nav {
   justify-items: center;
   align-content: center;
   flex-direction: row;
+  margin-bottom: 0;
 }
 
 .nav__list .nav__menu {
@@ -186,6 +187,12 @@ nav button {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 80vh;
+}
+
+.main-cart-scrollable {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 75vh;
 }
 
 .main-orders-scrollable {
@@ -290,7 +297,7 @@ nav button {
   width: 80%;
   height: 80%;
   border-radius: 100%;
-  background-color: red;
+  background-color: var(--button-color);
   left: 10%;
   top: -100px;
 }
@@ -388,7 +395,14 @@ nav button {
   color: var(--container-color);
 }
 
-/* cart modal page */
+/* cart  page */
+
+.cart-item-card {
+  background-color: var(--container-color) !important;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .cart-item-img {
   height: 100px;
@@ -403,6 +417,8 @@ nav button {
 .cart-checkout-btn {
   background-color: var(--button-color);
   color: var(--container-color);
+  border: none;
+  border-radius: 10px;
 }
 
 /* Orders page */
@@ -542,6 +558,11 @@ nav button {
     font-weight: bold;
   }
 
+  /* ===========Cart Scroll==================== */
+  .main-cart-scrollable {
+    height: calc(100vh - 17rem);
+  }
+
   /* ================BOTTOM NAV MOBILE=================== */
   .nav__menu {
     position: fixed;
@@ -644,7 +665,7 @@ nav button {
     width: 80%;
     height: 80%;
     border-radius: 100%;
-    background-color: red;
+    background-color: var(--button-color);
     left: 10%;
     top: -70px;
   }
@@ -709,7 +730,7 @@ nav button {
     width: 33vw;
     height: 33vw;
     border-radius: 35vw;
-    background-color: red;
+    background-color: var(--button-color);
     left: 3.5vw;
     top: -20vw;
   }
