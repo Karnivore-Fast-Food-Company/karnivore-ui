@@ -129,6 +129,7 @@ nav {
   justify-items: center;
   align-content: center;
   flex-direction: row;
+  margin-bottom: 0;
 }
 
 .nav__list .nav__menu {
@@ -186,6 +187,19 @@ nav button {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 80vh;
+}
+
+.main-cart-scrollable {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 75vh;
+}
+
+.main-orders-scrollable {
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: calc(100vh - 5rem);
+  margin-top: 5rem;
 }
 
 /* Categories */
@@ -383,7 +397,14 @@ nav button {
   color: var(--container-color);
 }
 
-/* cart modal page */
+/* cart  page */
+
+.cart-item-card {
+  background-color: var(--container-color) !important;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
 
 .cart-item-img {
   height: 100px;
@@ -398,9 +419,118 @@ nav button {
 .cart-checkout-btn {
   background-color: var(--button-color);
   color: var(--container-color);
+  border: none;
+  border-radius: 10px;
 }
 
-/* ========Mobile View======== */
+/* Orders page */
+
+.order-card,
+.order-item {
+  width: 300px;
+  height: 100px;
+  min-width: 300px;
+  min-width: 80px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.order-img {
+  position: absolute;
+  background: var(--button-color);
+  height: 90px;
+  width: 90px;
+  border-radius: 100%;
+  top: 0;
+}
+
+.order-card-details {
+  background-color: var(--container-color);
+  height: 100%;
+  width: 90%;
+  position: relative;
+  margin-left: 50px;
+  border-radius: 80px 10px 10px 80px;
+}
+
+.order-card-details-text {
+  margin-left: auto;
+}
+
+.view-order-btn {
+  background-color: var(--primary-color);
+  color: var(--container-color);
+  position: absolute;
+  height: 40%;
+  padding-left: 10px;
+  padding-right: 10px;
+  border: none;
+  bottom: -20px;
+  right: 0;
+  border-radius: 20px;
+  font-size: 12px;
+  text-align: center;
+  transition: all 0.3s ease-in-out;
+}
+
+.view-order-btn:hover {
+  background-color: var(--button-color);
+  color: var(--container-color);
+  right: 10px;
+}
+
+/* food item-card */
+
+.food-order-item {
+  width: 90%;
+  height: 100px;
+  margin-left: auto;
+  margin-right: auto;
+  position: relative;
+}
+
+.food-order-img {
+  position: absolute;
+  background: var(--button-color);
+  height: 90px;
+  width: 90px;
+  border-radius: 90px;
+  top: 0;
+}
+
+.food-order-card-details {
+  background-color: rgb(245, 244, 243);
+  height: 100%;
+  width: 90%;
+  position: relative;
+  margin-left: 10%;
+  border-radius: 60px 10px 10px 60px;
+}
+
+.food-order-card-details-text {
+  margin-left: auto;
+}
+
+.food-order-item-count {
+  background-color: var(--primary-color);
+  color: var(--container-color);
+  position: absolute;
+  height: 20px;
+  width: 20px;
+  padding: 15px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border: none;
+  bottom: 0;
+  right: 20px;
+  border-radius: 20px;
+  font-size: 12px;
+  text-align: center;
+}
+
+/* ========Mobile View / Tablet======== */
 @media only screen and (max-width: 1024px) {
   :root {
     --h1-font-size: 2rem;
@@ -428,6 +558,11 @@ nav button {
     font-size: var(--h4-font-size);
     margin-bottom: 0;
     font-weight: bold;
+  }
+
+  /* ===========Cart Scroll==================== */
+  .main-cart-scrollable {
+    height: calc(100vh - 17rem);
   }
 
   /* ================BOTTOM NAV MOBILE=================== */
@@ -545,6 +680,12 @@ nav button {
     margin-left: 20px;
     margin-right: 20px;
   }
+
+  /* Orders page */
+
+  .main-orders-scrollable {
+    height: calc(100vh - 9.5rem);
+  }
 }
 
 /* #region Tablet version (Tablet: up to 768px) */
@@ -594,6 +735,48 @@ nav button {
     background-color: var(--button-color);
     left: 3.5vw;
     top: -20vw;
+  }
+
+  /* Orders page */
+  .order-card,
+  .order-item {
+    width: 90vw;
+    height: 20vw;
+  }
+
+  .order-img {
+    height: 20vw;
+    width: 20vw;
+  }
+
+  .view-order-btn {
+    bottom: -10px;
+    right: 10px;
+    padding-left: 10px;
+    padding-right: 10px;
+  }
+
+  .view-order-btn:hover {
+    background-color: var(--button-color);
+    color: var(--container-color);
+    right: 0;
+  }
+
+  /* food item-card */
+
+  .food-order-item {
+    width: 90%;
+    height: 90px;
+  }
+
+  .food-order-img {
+    height: 80px;
+    width: 80px;
+    border-radius: 80px;
+  }
+
+  .food-order-card-details-text {
+    margin-left: 60px;
   }
 }
 
