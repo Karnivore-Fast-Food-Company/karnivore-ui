@@ -283,7 +283,7 @@ nav button {
   width: 80%;
   height: 80%;
   border-radius: 100%;
-  background-color: red;
+  background-color: var(--button-color);
   left: 10%;
   top: -100px;
 }
@@ -530,7 +530,7 @@ nav button {
     width: 80%;
     height: 80%;
     border-radius: 100%;
-    background-color: red;
+    background-color: var(--button-color);
     left: 10%;
     top: -70px;
   }
@@ -589,7 +589,7 @@ nav button {
     width: 33vw;
     height: 33vw;
     border-radius: 35vw;
-    background-color: red;
+    background-color: var(--button-color);
     left: 3.5vw;
     top: -20vw;
   }
