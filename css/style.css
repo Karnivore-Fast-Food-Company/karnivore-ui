@@ -189,18 +189,17 @@ nav button {
   height: 80vh;
 }
 
-
 .main-cart-scrollable {
   overflow-y: scroll;
   overflow-x: hidden;
   height: 75vh;
 }
+
 .main-orders-scrollable {
   overflow-y: scroll;
   overflow-x: hidden;
   height: calc(100vh - 5rem);
   margin-top: 5rem;
-
 }
 
 /* Categories */
