@@ -528,6 +528,112 @@ nav button {
   text-align: center;
 }
 
+/* ===========Authentication pages================ */
+
+.auth-body {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.card {
+  overflow: hidden;
+  border: 0 !important;
+  border-radius: 20px !important;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.1);
+}
+
+.img-left {
+  width: 45%;
+  background: url("../images/logo.png") center;
+  background-size: cover;
+}
+
+.card-body {
+  padding: 2rem;
+}
+
+.title {
+  margin-bottom: 2rem;
+}
+
+.form-input {
+  position: relative;
+}
+
+.form-input input {
+  width: 100%;
+  height: 45px;
+  padding-left: 40px;
+  margin-bottom: 20px;
+  box-sizing: border-box;
+  box-shadow: none;
+  border: 1px solid #e6e6e6;
+  border-radius: 50px;
+  outline: none;
+  background: transparent;
+}
+
+.form-input span {
+  position: absolute;
+  top: 10px;
+  padding-left: 15px;
+  color: var(--primary-color);
+}
+
+.form-input input::placeholder {
+  color: black;
+  padding-left: 0;
+}
+
+.form-input input:focus,
+.form-input input:valid {
+  border: 2px solid var(--primary-color);
+}
+
+.form-input input:focus::placeholder {
+  color: #454b69;
+}
+
+.custom-checkbox
+  .customr-control-input:checked
+  ~ .custom-control-label::before {
+  background-color: var(--primary-color);
+  border: 0;
+}
+
+.form-box button[type="submit"] {
+  margin-top: 10px;
+  border: none;
+  cursor: pointer;
+  border-radius: 50px;
+  background-color: var(--button-color);
+  color: var(--container-color);
+  font-size: 90%;
+  width: 100%;
+  font-weight: bold;
+  letter-spacing: 0.1rem;
+  transition: 0.5s;
+  padding: 12px;
+}
+
+.form-box button[type="submit"]:hover {
+  background-color: var(--primary-color);
+}
+
+.signup-link,
+.forgot-password-link {
+  color: var(--button-color);
+  font-weight: bold;
+}
+
+.signup-link:hover,
+.forgot-password-link:hover {
+  color: var(--primary-color);
+}
+
 /* ========Mobile View / Tablet======== */
 @media only screen and (max-width: 1024px) {
   :root {
