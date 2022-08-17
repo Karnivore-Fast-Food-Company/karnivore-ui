@@ -598,7 +598,9 @@ nav button {
   color: #454b69;
 }
 
-.custom-checkbox .customr-control-input:checked ~ .custom-control-label::before {
+.custom-checkbox
+  .customr-control-input:checked
+  ~ .custom-control-label::before {
   background-color: var(--primary-color);
   border: 0;
 }
@@ -707,6 +709,21 @@ nav button {
   height: 30px;
   width: 1px;
   background-color: var(--button-color);
+}
+
+/* ==========Fvaourites page=========== */
+
+.favourite-item-card {
+  background-color: var(--container-color) !important;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.favourite-item-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
 }
 
 /* ========Mobile View / Tablet======== */
