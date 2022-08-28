@@ -530,6 +530,50 @@ nav button {
   text-align: center;
 }
 
+/* ===Complete-payment */
+
+.payment-complete {
+  height: 100vh;
+}
+
+.payment-complete-card {
+  height: 90%;
+  border-radius: 10px;
+}
+
+.payment-details {
+  border-radius: 10px;
+  border: 1px var(--primary-color-alt) solid;
+  height: 50%;
+  padding: 10px;
+}
+
+.continue-shopping-btn {
+  background-color: var(--button-color);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: var(--container-color);
+}
+
+/* ==== paymentfailure ==== */
+.payment-failed {
+  height: 100vh;
+}
+
+.payment-failed-card {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.try-again-btn {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: var(--container-color);
+}
+
 /* ========Mobile View / Tablet======== */
 @media only screen and (max-width: 1024px) {
   :root {
