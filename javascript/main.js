@@ -1,16 +1,11 @@
-// navigation
-const menuOpen = document.querySelector('.side-open');
-const menuClose = document.querySelector('.side-close');
-const menu = document.querySelector('.nav__menu');
-// open menu
-menuOpen.addEventListener('click', () => {
-  menu.style.display = 'flex';
-  menuClose.style.display = 'inline-block';
-  menuOpen.style.display = 'none';
-});
-// close menu
-menuClose.addEventListener('click', () => {
-  menu.style.display = 'none';
-  menuOpen.style.display = 'inline-block';
-  menuClose.style.display = 'none';
-});
+function handleTextOverflow(length, textClass) {
+  document.querySelectorAll(textClass).forEach((element) => {
+    const text = element.innerHTML.trim();
+    text.length > length
+      ? (element.innerHTML = `${text.slice(0, length)}...`)
+      : (element.innerHTML = text);
+  });
+}
+
+handleTextOverflow(13, '.food-card-text1');
+handleTextOverflow(15, '.food-card-text');

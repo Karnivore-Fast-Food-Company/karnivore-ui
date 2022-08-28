@@ -53,3 +53,11 @@ Give a ⭐️ if you like this project!
 ## 📝 License
 
 This project is [MIT](LICENSE) licensed.
+
+##### Test
+
+```npx hint .```
+
+```npx eslint .```
+
+```npx stylelint "**/*.{css,scss}" --fix```
