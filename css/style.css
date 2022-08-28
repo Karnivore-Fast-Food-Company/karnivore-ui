@@ -529,15 +529,18 @@ nav button {
   font-size: 12px;
   text-align: center;
 }
+
 /* ===Complete-payment */
 
 .payment-complete {
   height: 100vh;
 }
+
 .payment-complete-card {
   height: 90%;
   border-radius: 10px;
 }
+
 .payment-details {
   border-radius: 10px;
   border: 1px var(--primary-color-alt) solid;
@@ -557,10 +560,12 @@ nav button {
 .payment-failed {
   height: 100vh;
 }
+
 .payment-failed-card {
   height: 300px;
   border-radius: 10px;
 }
+
 .try-again-btn {
   background-color: var(--primary-color);
   border-radius: 5px;
