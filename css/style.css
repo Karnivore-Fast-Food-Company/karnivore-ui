@@ -367,6 +367,7 @@ nav button {
   color: var(--container-color);
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .cart-bx {
@@ -375,6 +376,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .cart-icon {
@@ -528,6 +530,7 @@ nav button {
   text-align: center;
 }
 
+<<<<<<< HEAD
 /* ===========Authentication pages================ */
 
 .auth-body {
@@ -724,6 +727,49 @@ nav button {
   height: 100%;
   width: 100%;
   border-radius: 10px;
+}
+/* ===Complete-payment */
+
+.payment-complete {
+  height: 100vh;
+}
+
+.payment-complete-card {
+  height: 90%;
+  border-radius: 10px;
+}
+
+.payment-details {
+  border-radius: 10px;
+  border: 1px var(--primary-color-alt) solid;
+  height: 50%;
+  padding: 10px;
+}
+
+.continue-shopping-btn {
+  background-color: var(--button-color);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: var(--container-color);
+}
+
+/* ==== paymentfailure ==== */
+.payment-failed {
+  height: 100vh;
+}
+
+.payment-failed-card {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.try-again-btn {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: var(--container-color);
 }
 
 /* ========Mobile View / Tablet======== */
