@@ -553,6 +553,22 @@ nav button {
   color: var(--container-color);
 }
 
+/* ==== paymentfailure ==== */
+.payment-failed {
+  height: 100vh;
+}
+.payment-failed-card {
+  height: 300px;
+  border-radius: 10px;
+}
+.try-again-btn {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: var(--container-color);
+}
+
 /* ========Mobile View / Tablet======== */
 @media only screen and (max-width: 1024px) {
   :root {
