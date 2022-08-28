@@ -367,6 +367,7 @@ nav button {
   color: var(--container-color);
   font-weight: bold;
   font-size: 20px;
+  border-radius: 10px;
 }
 
 .cart-bx {
@@ -375,6 +376,7 @@ nav button {
   display: flex;
   align-items: center;
   justify-content: center;
+  border-radius: 10px;
 }
 
 .cart-icon {
@@ -529,7 +531,6 @@ nav button {
 }
 
 /* ===========Authentication pages================ */
-
 .auth-body {
   height: 100vh;
   display: flex;
@@ -548,7 +549,8 @@ nav button {
 .img-left {
   width: 45%;
   background: url("../images/logo.png") center;
-  background-size: cover;
+  background-repeat: no-repeat;
+  background-size: contain;
 }
 
 .card-body {
@@ -597,9 +599,7 @@ nav button {
   color: #454b69;
 }
 
-.custom-checkbox
-  .customr-control-input:checked
-  ~ .custom-control-label::before {
+.custom-checkbox .customr-control-input:checked ~ .custom-control-label::before {
   background-color: var(--primary-color);
   border: 0;
 }
@@ -632,6 +632,141 @@ nav button {
 .signup-link:hover,
 .forgot-password-link:hover {
   color: var(--primary-color);
+}
+
+/* ================Profile Page=============== */
+
+.main-profile {
+  overflow-y: scroll;
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.profile-img {
+  border-radius: 100%;
+  border: 1px solid var(--button-color);
+}
+
+.name-card {
+  border: 1px solid var(--button-color);
+  border-radius: 10px;
+  position: relative;
+  background: var(--container-color);
+}
+
+.edit-profile-btn {
+  border: 1px solid var(--button-color);
+  border-radius: 100%;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  right: 10px;
+  top: -18px;
+  background-color: var(--container-color);
+  color: var(--button-color);
+}
+
+.profile-top {
+  height: 30%;
+}
+
+.profile-bottom {
+  background-color: var(--container-color);
+  position: relative;
+  height: 70%;
+  border-top: 2px solid var(--button-color);
+  border-radius: 80px 80px 0 0;
+}
+
+.profile-back {
+  background-color: var(--primary-color);
+  border-radius: 10px 10px 0 0;
+  height: 70vh;
+}
+
+.profile-name-card {
+  position: absolute;
+  top: -30px;
+}
+
+.profile-bottom-details {
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-top: 50px;
+  overflow-y: scroll;
+  overflow-x: hidden;
+  height: 80%;
+}
+
+.vertical-divider-profile {
+  height: 30px;
+  width: 1px;
+  background-color: var(--button-color);
+}
+
+/* ==========Fvaourites page=========== */
+
+.favourite-item-card {
+  background-color: var(--container-color) !important;
+  border-radius: 10px;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.favourite-item-img {
+  height: 100%;
+  width: 100%;
+  border-radius: 10px;
+}
+
+/* ===Complete-payment */
+
+.payment-complete {
+  height: 100vh;
+}
+
+.payment-complete-card {
+  height: 90%;
+  border-radius: 10px;
+}
+
+.payment-details {
+  border-radius: 10px;
+  border: 1px var(--primary-color-alt) solid;
+  height: 50%;
+  padding: 10px;
+}
+
+.continue-shopping-btn {
+  background-color: var(--button-color);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: var(--container-color);
+}
+
+/* ==== paymentfailure ==== */
+.payment-failed {
+  height: 100vh;
+}
+
+.payment-failed-card {
+  height: 300px;
+  border-radius: 10px;
+}
+
+.try-again-btn {
+  background-color: var(--primary-color);
+  border-radius: 5px;
+  border: none;
+  padding: 10px;
+  color: var(--container-color);
 }
 
 /* ========Mobile View / Tablet======== */
@@ -881,6 +1016,18 @@ nav button {
 
   .food-order-card-details-text {
     margin-left: 60px;
+  }
+
+  /* =====profile page======== */
+
+  .profile-back {
+    height: 65vh;
+    font-size: 12px;
+  }
+
+  .profile-img {
+    width: 60px;
+    height: 60px;
   }
 }
 
