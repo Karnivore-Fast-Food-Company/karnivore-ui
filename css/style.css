@@ -569,6 +569,15 @@ nav button {
   color: var(--container-color);
 }
 
+/* ====404 $ 503 ======*/
+.page {
+  height: 100vh;
+}
+
+.page-content {
+  margin-top: auto;
+  margin-bottom: auto;
+}
 /* ========Mobile View / Tablet======== */
 @media only screen and (max-width: 1024px) {
   :root {
