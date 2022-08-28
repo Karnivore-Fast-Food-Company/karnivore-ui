@@ -530,9 +530,7 @@ nav button {
   text-align: center;
 }
 
-<<<<<<< HEAD
 /* ===========Authentication pages================ */
-
 .auth-body {
   height: 100vh;
   display: flex;
@@ -601,9 +599,7 @@ nav button {
   color: #454b69;
 }
 
-.custom-checkbox
-  .customr-control-input:checked
-  ~ .custom-control-label::before {
+.custom-checkbox .customr-control-input:checked ~ .custom-control-label::before {
   background-color: var(--primary-color);
   border: 0;
 }
@@ -728,6 +724,7 @@ nav button {
   width: 100%;
   border-radius: 10px;
 }
+
 /* ===Complete-payment */
 
 .payment-complete {
