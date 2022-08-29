@@ -1,0 +1,401 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- Style -->
+    <link href="css/cssreset.css" rel="stylesheet" type="text/css" />
+
+    <!-- Fonts -->
+
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap"
+      rel="stylesheet"
+    />
+
+    <!-- BOX ICONS -->
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/boxicons@latest/css/boxicons.min.css"
+    />
+    <!-- Bootstrap -->
+    <!-- CSS only -->
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+    <!-- Bootstrap -->
+
+    <!--  -->
+    <link href="css/style.css" rel="stylesheet" type="text/css" />
+    <title>Delivery Locations</title>
+  </head>
+  <body>
+    <div class="row mt-4">
+      <div class="modal-content col-10 mx-auto">
+        <div class="">
+          <div class="text-center">
+            <h4>Select Delivery Location</h4>
+            <small>Location Designation in square braces</small>
+          </div>
+        </div>
+        <div class="text-center">
+          <input type="hidden" id="locations_data" value="[[" our="" daily=""
+          bread="" -="" beside="" cnps,="" mile="" 17=""
+          (k-b01)","4.148121","9.301902"],["awa="" &="" sons="" engineering=""
+          shipping="" enterprise="" (k-b02)","4.149980","9.299780"],["apple=""
+          wine="" bar="" @="" molyko="" u="" block="" eta="" palace=""
+          (k-b03)","4.152940784526946","9.293561844629966"],["cosmetic=""
+          plus-="" ub="" junction=""
+          (k-b04)","4.154181448411114","9.291479989275576"],["manchester=""
+          house="" infinix="" shop=""
+          (k-b05)","4.154847724966056","9.29004030301687"],["shiloh="" mother=""
+          care@jigaz="" malingo=""
+          (k-b07)","4.1565651","9.2874075"],["timbuktu="" wines="" and=""
+          whiskeys="" sosoliso="" opposite=""
+          papergate(k-b08)","4.158603820496374","9.283161622221547"],["legend=""
+          photos="" tarred=""
+          (k-b09)","4.1567510989030865","9.289022404695631"],["american=""
+          malingo,="" kingdom=""
+          hall(k-b10)","4.157418410796107","9.290499012793784"],["family=""
+          care="" clinic="" untarred="" (k-b11)","4.1547059","9.2863752"],["t=""
+          n="" cosmetic="" bonduma="" gate=""
+          (k-b12)","4.1575348","9.2676645"],["shiloh="" after="" cogeni=""
+          (k-b13)","4.156173391657527","9.26311518691451"],["t="" checkpoint\=""
+          mayor="" street=""
+          (k-b14)","4.159254190111802","9.281061330455016"],["success=""
+          point="" biaka=""
+          junction(k-b16)","4.158585037858523","9.27384629210297"],["dubai=""
+          whiskys="" (k-b17)","4.156952","9.266071"],["karnivore="" fast=""
+          food="" restaurant=""
+          (k-b25)","4.161356437643715","9.289536655739854"]]"="">
+          <div class="row">
+            <div class="col-10 mx-auto my-2 locations_modal">
+              <div class="card w-100">
+                <div
+                  class="card-body"
+                  style="overflow: scroll; max-height: 80vh"
+                >
+                  <div class="text-left mb-4">
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1F6sNNIxicm4zWhnl9"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 01","latitude":"4.148121","location_name":"Our Daily Bread - Beside CNPS, Mile 17 (K-B01)","longitude":"9.301902","owner_contact":"673975062","owner_name":"Ayuk Larissa Ayuk Manyoh","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1F6sNNIxicm4zWhnl9"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1F6sNNIxicm4zWhnl9"
+                      >
+                        <b>[K-B 01] - </b> Our Daily Bread - Beside CNPS, Mile
+                        17 (K-B01)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N3_kLxvQwWH8XfaY8OS"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 02","latitude":"4.149980","location_name":"Awa &amp; Sons Engineering &amp; Shipping Enterprise - Mile 17 (K-B02)","longitude":"9.299780","owner_contact":"683171163","owner_name":"Mukwelle Peace","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N3_kLxvQwWH8XfaY8OS"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N3_kLxvQwWH8XfaY8OS"
+                      >
+                        <b>[K-B 02] - </b> Awa &amp; Sons Engineering &amp;
+                        Shipping Enterprise - Mile 17 (K-B02)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1F6WYV6w1l_jnMnVbl"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 03","latitude":"4.152940784526946","location_name":"Apple Wine Bar @ molyko U block - beside Eta Palace (K-B03)","longitude":"9.293561844629966","owner_contact":"670305697","owner_name":"Rosaline Mubu Yelemnyuy","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1F6WYV6w1l_jnMnVbl"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1F6WYV6w1l_jnMnVbl"
+                      >
+                        <b>[K-B 03] - </b> Apple Wine Bar @ molyko U block -
+                        beside Eta Palace (K-B03)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1F7B4MH0vhXSQ7iH4Y"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 04","latitude":"4.154181448411114","location_name":"Cosmetic Plus- UB Junction (K-B04)","longitude":"9.291479989275576","owner_contact":"653572397","owner_name":"Mojoko Brenda","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1F7B4MH0vhXSQ7iH4Y"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1F7B4MH0vhXSQ7iH4Y"
+                      >
+                        <b>[K-B 04] - </b> Cosmetic Plus- UB Junction (K-B04)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1F7REVWyjXlkmFBHSl"
+                        value='{"del_fee":"350","delivery_count":0,"designation":"K-B 05","latitude":"4.154847724966056","location_name":"Manchester House Infinix Shop - UB Junction (K-B05)","longitude":"9.29004030301687","owner_contact":"650357851","owner_name":"Kaboh Melanie ","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1F7REVWyjXlkmFBHSl"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1F7REVWyjXlkmFBHSl"
+                      >
+                        <b>[K-B 05] - </b> Manchester House Infinix Shop - UB
+                        Junction (K-B05)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1F8v7ssv2_zut4iOzs"
+                        value='{"del_fee":"350","delivery_count":0,"designation":"K-B 07","latitude":"4.1565651","location_name":"Shiloh Mother Care@Jigaz - Malingo Junction (K-B07)","longitude":"9.2874075","owner_contact":"685336206","owner_name":"Pierret","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1F8v7ssv2_zut4iOzs"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1F8v7ssv2_zut4iOzs"
+                      >
+                        <b>[K-B 07] - </b> Shiloh Mother Care@Jigaz - Malingo
+                        Junction (K-B07)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1F9gFpuGdAajAczOmF"
+                        value='{"del_fee":"250","delivery_count":0,"designation":"K-B 08","latitude":"4.158603820496374","location_name":"Timbuktu Wines And Whiskeys @ Sosoliso - opposite PaperGate(K-B08)","longitude":"9.283161622221547","owner_contact":"","owner_name":"","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1F9gFpuGdAajAczOmF"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1F9gFpuGdAajAczOmF"
+                      >
+                        <b>[K-B 08] - </b> Timbuktu Wines And Whiskeys @
+                        Sosoliso - opposite PaperGate(K-B08)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1F7nFfaZ3Z2b7subRY"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 09","latitude":"4.1567510989030865","location_name":"Legend Photos - Tarred Malingo (K-B09)","longitude":"9.289022404695631","owner_contact":"680482009","owner_name":"Nkwati Nidelle","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1F7nFfaZ3Z2b7subRY"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1F7nFfaZ3Z2b7subRY"
+                      >
+                        <b>[K-B 09] - </b> Legend Photos - Tarred Malingo
+                        (K-B09)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1F81MX1lO2t2SoILek"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 10","latitude":"4.157418410796107","location_name":"American Shop - Tarred Malingo, Opposite Kingdom Hall(K-B10)","longitude":"9.290499012793784","owner_contact":"676456435","owner_name":"Agbor Ant Rabbi","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1F81MX1lO2t2SoILek"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1F81MX1lO2t2SoILek"
+                      >
+                        <b>[K-B 10] - </b> American Shop - Tarred Malingo,
+                        Opposite Kingdom Hall(K-B10)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1F9upqgD9d2vYeMX5K"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 11","latitude":"4.1547059","location_name":"Family Care Clinic - Untarred Malingo (K-B11)","longitude":"9.2863752","owner_contact":"678111489","owner_name":"Mercy Mukete","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1F9upqgD9d2vYeMX5K"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1F9upqgD9d2vYeMX5K"
+                      >
+                        <b>[K-B 11] - </b> Family Care Clinic - Untarred Malingo
+                        (K-B11)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1FFMCcwFp9IeLnO_EG"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 12","latitude":"4.1575348","location_name":"T &amp; N Cosmetic Shop - Bonduma Gate (K-B12)","longitude":"9.2676645","owner_contact":"651224801","owner_name":"Mbu Henrietta Bessem","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1FFMCcwFp9IeLnO_EG"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1FFMCcwFp9IeLnO_EG"
+                      >
+                        <b>[K-B 12] - </b> T &amp; N Cosmetic Shop - Bonduma
+                        Gate (K-B12)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1FFhbVCNUBzXVXXdvx"
+                        value='{"del_fee":"400","delivery_count":0,"designation":"K-B 13","latitude":"4.156173391657527","location_name":"Shiloh Mother Care @ Bonduma - after Cogeni (K-B13)","longitude":"9.26311518691451","owner_contact":"671497878","owner_name":"Elizabeth Bente","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1FFhbVCNUBzXVXXdvx"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1FFhbVCNUBzXVXXdvx"
+                      >
+                        <b>[K-B 13] - </b> Shiloh Mother Care @ Bonduma - after
+                        Cogeni (K-B13)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1FDhGdGeTHVFX41Jot"
+                        value='{"del_fee":"250","delivery_count":0,"designation":"K-B 14","latitude":"4.159254190111802","location_name":"T &amp; N Cosmetic Shop - Checkpoint\/Mayor Street  (K-B14)","longitude":"9.281061330455016","owner_contact":"","owner_name":"","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1FDhGdGeTHVFX41Jot"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1FDhGdGeTHVFX41Jot"
+                      >
+                        <b>[K-B 14] - </b> T &amp; N Cosmetic Shop -
+                        Checkpoint/Mayor Street (K-B14)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N1FDvhBWuWqiTPuZY6z"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 16","latitude":"4.158585037858523","location_name":"Success Point  - Biaka Junction(K-B16)","longitude":"9.27384629210297","owner_contact":"651007203","owner_name":"Tatiana Vounyi Mfuh","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N1FDvhBWuWqiTPuZY6z"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N1FDvhBWuWqiTPuZY6z"
+                      >
+                        <b>[K-B 16] - </b> Success Point - Biaka Junction(K-B16)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N5UKfIc4eiZc1zW5Sn8"
+                        value='{"del_fee":"300","delivery_count":0,"designation":"K-B 17","latitude":"4.156952","location_name":"Dubai Wines &amp; Whiskys (K-B17)","longitude":"9.266071","owner_contact":"672304633","owner_name":"Joan Ngowo","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N5UKfIc4eiZc1zW5Sn8"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N5UKfIc4eiZc1zW5Sn8"
+                      >
+                        <b>[K-B 17] - </b> Dubai Wines &amp; Whiskys (K-B17)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                    <div class="form-check mt-2 mb-2 py-2">
+                      <input
+                        class="form-check-input-custom-2 mr-2 radio-custom"
+                        type="radio"
+                        name="delivery_location"
+                        id="delivery_location-N3XBcTg8YKYDYv1sa8L"
+                        value='{"del_fee":"50","delivery_count":0,"designation":"K-B 25","latitude":"4.161356437643715","location_name":"Karnivore Fast Food Restaurant (K-B25)","longitude":"9.289536655739854","owner_contact":"678911526","owner_name":"Master paschal","place_image":"del_location_placeholder.jpg","status":"1","location_key":"-N3XBcTg8YKYDYv1sa8L"}'
+                      /><span class="radio-custom-dummy"></span>
+                      <label
+                        class="form-check-label d-inline"
+                        style="font-size: 15px"
+                        for="delivery_location-N3XBcTg8YKYDYv1sa8L"
+                      >
+                        <b>[K-B 25] - </b> Karnivore Fast Food Restaurant
+                        (K-B25)
+                      </label>
+                    </div>
+                    <hr style="opacity: 0.3; width: 96%" />
+                  </div>
+                  <p id="location_data_set" style="color: black">
+                    Awa &amp; Sons Engineering &amp; Shipping Enterprise ' Mile
+                    17 (K-B02) at [4.149980, 9.299780]
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col d-flex justify-content-around text-center">
+          <a
+            style="border-radius: 20px"
+            class="delivery-btn col-xl-3 col-lg-3 col-md-4 col-5"
+            >Cancel</a
+          >
+          <a
+            style="border-radius: 20px"
+            class="delivery-btn-alt col-xl-3 col-lg-3 col-md-4 col-5"
+            >Proceed</a
+          >
+        </div>
+      </div>
+    </div>
+    <script src="javascript/main.js"></script>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -578,6 +578,19 @@ nav button {
   margin-top: auto;
   margin-bottom: auto;
 }
+
+/* ===delivery locations==== */
+
+.delivery-btn,
+.delivery-btn-alt {
+  background-color: var(--button-color);
+  padding: 10px 20px 10px 20px;
+  color: #fff;
+}
+
+.delivery-btn {
+  background-color: var(--primary-color);
+}
 /* ========Mobile View / Tablet======== */
 @media only screen and (max-width: 1024px) {
   :root {
