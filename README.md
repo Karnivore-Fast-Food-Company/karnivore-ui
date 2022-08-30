@@ -43,6 +43,12 @@ To get a local copy  and to set it up and running follow these simple example st
 - Twitter: [@Lekunze_Nley](https://twitter.com/Lekunze_Nley)
 - Linkedin: [lekunze-nley](https://www.linkedin.com/in/lekunze-nley/)
 
+👤 **Frunwi Mugri Ndeh**
+
+- Github: [@maestrochrome22](https://github.com/mugri-ndeh)
+- Twitter: [@mugrindeh](https://twitter.com/mugrindeh)
+- Linkedin: [Mugri Ndeh](https://www.linkedin.com/in/mugri-ndeh-a0aa4b19a/)
+
 ## Show your support
 
 Give a ⭐️ if you like this project!
