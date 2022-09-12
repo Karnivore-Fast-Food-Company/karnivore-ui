@@ -7,5 +7,11 @@ function handleTextOverflow(length, textClass) {
   });
 }
 
-handleTextOverflow(13, '.food-card-text1');
-handleTextOverflow(15, '.food-card-text');
+handleTextOverflow(13, ".food-card-text1");
+handleTextOverflow(15, ".food-card-text");
+
+// login
+var number = document.getElementById("login_number");
+var password = document.getElementById("login_password");
+var confirmPassword = document.getElementById("confirmPassword");
+var loginForm = document.getElementById("login-form");

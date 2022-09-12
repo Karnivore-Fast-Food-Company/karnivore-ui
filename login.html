@@ -45,27 +45,29 @@
             <div class="img-left d-none d-md-flex"></div>
             <div class="card-body">
               <h4 class="title text-center mt-4">Login to your account</h4>
-              <form class="form-box px-3">
+              <form class="form-box px-3" id="login-form">
                 <div class="form-input">
                   <span><i class="bx bx-phone"></i></span>
                   <input
                     type="number"
-                    name=""
+                    name="number"
                     placeholder="Phone number"
                     tabindex="10"
-                    required
+                    id="login_number"
                   />
+                  <small>Error message</small>
                 </div>
 
                 <div class="form-input">
                   <span><i class="bx bx-key"></i></span>
                   <input
                     type="password"
-                    name=" "
+                    name="password"
                     placeholder="Password"
+                    id="login_password"
                     tabindex="10"
-                    required
                   />
+                  <small>Error message</small>
                 </div>
                 <div class="mb-3">
                   <div class="custom-control custom-checkbox">
@@ -101,7 +103,7 @@
       </div>
     </div>
 
-    <script src="javascript/main.js"></script>
+    <script src="javascript/validate_login.js"></script>
     <!-- JavaScript Bundle with Popper -->
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
