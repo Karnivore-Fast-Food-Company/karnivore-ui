@@ -1,15 +1,21 @@
 // signUp
-var number = document.getElementById("sign_up_number");
-var username = document.getElementById("sign_up_username");
-var email = document.getElementById("sign_up_email");
-var password = document.getElementById("sign_up_password");
-var confirmPassword = document.getElementById("confirm_password");
-var signUpForm = document.getElementById("sign-up-form");
+const number = document.getElementById('sign_up_number');
+const username = document.getElementById('sign_up_username');
+const email = document.getElementById('sign_up_email');
+const password = document.getElementById('sign_up_password');
+const confirmPassword = document.getElementById('confirm_password');
+const signUpForm = document.getElementById('sign-up-form');
 
-signUpForm.addEventListener("submit", function (e) {
-  e.preventDefault();
-  validateSignUp();
-});
+const setSuccess = (input) => {
+  const formControl = input.parentElement;
+  formControl.classList.remove('error');
+};
+const setErrorFor = (input, message) => {
+  const formControl = input.parentElement;
+  const small = formControl.querySelector('small');
+  small.innerHTML = message;
+  formControl.classList.add('error');
+};
 
 const validateSignUp = () => {
   const numberValue = number.value.trim();
@@ -19,46 +25,40 @@ const validateSignUp = () => {
   const confirmPasswordValue = confirmPassword.value.trim();
 
   //   Validate nnumber
-  if (numberValue === "") {
-    setErrorFor(number, "Please input your phone number");
+  if (numberValue === '') {
+    setErrorFor(number, 'Please input your phone number');
   } else {
     setSuccess(number);
   }
   // validate username
-  if (usernameValue === "") {
-    setErrorFor(username, "Please input your username");
+  if (usernameValue === '') {
+    setErrorFor(username, 'Please input your username');
   } else {
     setSuccess(username);
   }
 
   // validate email
-  if (emailValue === "") {
-    setErrorFor(email, "Please input your email");
+  if (emailValue === '') {
+    setErrorFor(email, 'Please input your email');
   } else {
     setSuccess(email);
   }
 
   // validate username
-  if (confirmPasswordValue != passwordValue) {
-    setErrorFor(confirmPassword, "Your passwords donot match");
+  if (confirmPasswordValue !== passwordValue) {
+    setErrorFor(confirmPassword, 'Your passwords donot match');
   } else {
     setSuccess(confirmPassword);
   }
   // for password
   if (passwordValue.length < 6) {
-    setErrorFor(password, "Password cannot be less than 6 characters");
+    setErrorFor(password, 'Password cannot be less than 6 characters');
   } else {
     setSuccess(password);
   }
 };
 
-const setSuccess = (input) => {
-  const formControl = input.parentElement;
-  formControl.classList.remove("error");
-};
-const setErrorFor = (input, message) => {
-  const formControl = input.parentElement;
-  const small = formControl.querySelector("small");
-  small.innerHTML = message;
-  formControl.classList.add("error");
-};
+signUpForm.addEventListener('submit', (e) => {
+  e.preventDefault();
+  validateSignUp();
+});
