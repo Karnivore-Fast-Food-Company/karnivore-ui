@@ -215,16 +215,23 @@
                   <div class="col">
                     <h4 class="mt-2">Choose your size</h4>
                     <div class="row mx-auto mt-2">
-                      <div class="col-3 complement-box complement-active size" id="smallSize">
+                      <div class="col-3 complement-box complement-active">
                         <div class="check">
-                          <i class="bx bx-check"></i>
+                          <input class="form-check size" value="500" type="radio" name="sizeRadio" id="smallSize"
+                            checked />
                         </div>
                         <p>Small</p>
                       </div>
-                      <div class="col-4 complement-box complement-active size" id="mediumSize">
+                      <div class="col-4 complement-box complement-active">
+                        <div class="check">
+                          <input class="form-check size" value="800" type="radio" name="sizeRadio" id="mediumSize" />
+                        </div>
                         <p>Medium</p>
                       </div>
-                      <div class="col-3 complement-box complement-active size" id="largeSize">
+                      <div class="col-3 complement-box complement-active">
+                        <div class="check">
+                          <input class="form-check size" value="1000" type="radio" name="sizeRadio" id="largeSize" />
+                        </div>
                         <p>Large</p>
                       </div>
                     </div>
@@ -240,7 +247,7 @@
                       <div class="row d-flex align-items-center">
                         <div class="col">
                           <input class="form-check-input" value="Plantain Tape" type="radio" name="flexRadioDefault"
-                            id="flexRadioDefault2" onclick="handleClick(this)" checked />
+                            id="flexRadioDefault2" checked />
                           <label class="form-check-label" for="flexRadioDefault2">
                             Plantain Tape
                           </label>
@@ -256,7 +263,7 @@
                       <div class="row d-flex align-items-center">
                         <div class="col">
                           <input class="form-check-input" value="French fries" type="radio" name="flexRadioDefault"
-                            id="flexRadioDefault" onclick="handleClick(this)" checked />
+                            id="flexRadioDefault" />
                           <label class="form-check-label" for="flexRadioDefault">
                             French fries
                           </label>
