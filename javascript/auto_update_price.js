@@ -52,3 +52,21 @@ if (addFoodQty) {
     });
     updatePrice(size, parseInt(foodQty.innerText, 10));
 }
+
+var foodModal = document.querySelectorAll('.food-item');
+
+foodModal.forEach((e) => {
+    e.addEventListener('click', () => {
+        console.log('OK');
+        radios.forEach((radio) => {
+            var foodName = e.getElementsByTagName('h3')[0].innerText.trim();
+            total.id = total.id + " " + foodName;
+            radio.id = radio.id + " " + foodName;
+            console.log(radio.id);
+
+        })
+    });
+})
+//  function to pass id from food-item to modal
+
+
