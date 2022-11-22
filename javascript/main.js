@@ -9,3 +9,4 @@ function handleTextOverflow(length, textClass) {
 
 handleTextOverflow(13, '.food-card-text1');
 handleTextOverflow(15, '.food-card-text');
+
