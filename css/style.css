@@ -610,7 +610,7 @@ nav button {
   color: #454b69;
 }
 
-.custom-checkbox .customr-control-input:checked~.custom-control-label::before {
+.custom-checkbox .customr-control-input:checked ~ .custom-control-label::before {
   background-color: var(--primary-color);
   border: 0;
 }
